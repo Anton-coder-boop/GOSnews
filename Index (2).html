@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Аналитическая справка: Нововведения в закупках | 07.05.2026</title>
+  <style>
+    :root {
+      --primary: #1e3a5f;
+      --secondary: #2c5282;
+      --accent: #3182ce;
+      --bg: #f4f6f9;
+      --card-bg: #ffffff;
+      --text: #2d3748;
+      --text-light: #718096;
+      --border: #e2e8f0;
+      --impact-bg: #ebf4ff;
+      --impact-border: #4299e1;
+      --success: #276749;
+      --warning: #c05621;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 1280px; margin: 0 auto; padding: 40px 20px; }
+    
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 48px 32px;
+      border-radius: 8px;
+      margin-bottom: 36px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    header h1 { font-size: 2rem; font-weight: 600; margin-bottom: 8px; letter-spacing: -0.5px; }
+    header p { opacity: 0.9; font-size: 1.05rem; max-width: 800px; margin: 0 auto; }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 24px;
+    }
+    
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 28px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 8px 16px rgba(0,0,0,0.08); }
+    
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 0.8rem;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .badge {
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.7rem;
+    }
+    .badge.deadline { background: #fed7d7; color: #9b2c2c; }
+    .badge.info { background: #bee3f8; color: #2b6cb0; }
+    .badge.practice { background: #e9d8fd; color: #553c9a; }
+    
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 16px;
+      border-bottom: 2px solid var(--impact-border);
+      padding-bottom: 10px;
+    }
+    
+    .card-content ul { padding-left: 18px; margin-bottom: 18px; }
+    .card-content li { margin-bottom: 8px; font-size: 0.95rem; }
+    .card-content strong { color: var(--secondary); }
+    
+    .impact-box {
+      background: var(--impact-bg);
+      border-left: 4px solid var(--impact-border);
+      padding: 14px;
+      border-radius: 4px;
+      margin-top: auto;
+      font-size: 0.92rem;
+    }
+    .impact-box strong { color: var(--primary); display: block; margin-bottom: 4px; }
+    
+    .source-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 16px;
+      font-size: 0.88rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .source-link:hover { color: var(--secondary); text-decoration: underline; }
+    .source-link::before { content: "🔗"; }
+    
+    footer {
+      text-align: center;
+      padding: 32px 0 0;
+      color: var(--text-light);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+      margin-top: 48px;
+    }
+    
+    @media (max-width: 768px) {
+      .grid { grid-template-columns: 1fr; }
+      header { padding: 32px 20px; }
+      header h1 { font-size: 1.6rem; }
+    }
+    @media print {
+      body { background: #fff; }
+      .card { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
+      header { background: #fff; color: #000; border-bottom: 2px solid #000; box-shadow: none; }
+      .source-link { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ключевые изменения в закупочном законодательстве</h1>
+      <p>Тезисные выводы и практические рекомендации для поставщиков и заказчиков | Дата актуализации: 07.05.2026</p>
+    </header>
+
+    <div class="grid">
+      <!-- 1 -->
+      <article class="card">
+        <div class="card-meta"><span>Законопроект</span><span class="badge deadline">01.01.2027</span></div>
+        <h2 class="card-title">Цифровая верификация поставщиков</h2>
+        <div class="card-content">
+          <ul>
+            <li><strong>Отмена деклараций:</strong> С 2027 г. проверка соответствия требованиям идет автоматически через данные ФНС в ЕИС.</li>
+            <li><strong>Новые фильтры:</strong> Автоматический отсев при недостоверности ЕГРЮЛ, причастности к экстремизму/терроризму, блокировке счетов.</li>
+            <li><strong>Лимит задолженности:</strong> ≤1% от активов/доходов ИЛИ ≤3 000 руб. (одновременно).</li>
+          </ul>
+        </div>
+        <div class="impact-box">
+          <strong>⚡ Бизнес-вывод:</strong> Упрощение подачи заявок, но ужесточение автоматического контроля. Требуется предварительный аудит налоговой и бухгалтерской отчетности до конца 2026 г.
+        </div>
+        <a href="#" class="source-link">Проект ID: 01/05/04-26/00167177</a>
+      </article>
+
+      <!-- 2 -->
+      <article class="card">
+        <div class="card-meta"><span>Прозрачность</span><span class="badge deadline">01.07.2026</span></div>
+        <h2 class="card-title">Реестр контрактов для малых закупок у ед. поставщика</h2>
+        <div class="card-content">
+          <ul>
+            <li>Сведения о закупках по п. 4, 5 ч. 1 ст. 93 44-ФЗ будут вноситься в реестр контрактов.</li>
+            <li><strong>Переходный период:</strong> Для бумажных сделок (01.07.2026–01.02.2028) данные разрешено передавать в упрощенном виде до 01.05.2028.</li>
+            <li>Информация не публикуется в открытой части ЕИС, но доступна контролирующим органам.</li>
+          </ul>
+        </div>
+        <div class="impact-box">
+          <strong>⚡ Бизнес-вывод:</strong> Повышается надзорный контроль. Необходимо внимательнее подходить к оформлению и исполнению контрактов как единственный поставщик.
+        </div>
+        <a href="https://regulation.gov.ru/projects/166841/" class="source-link" target="_blank">Перейти к проекту на regulation.gov.ru</a>
+      </article>
+
+      <!-- 3 -->
+      <article class="card">
+        <div class="card-meta"><span>Документооборот</span><span class="badge deadline">01.07.2026</span></div>
+        <h2 class="card-title">Унификация претензионной работы</h2>
+        <div class="card-content">
+          <ul>
+            <li><strong>Жесткие сроки:</strong> 3 рабочих дня на направление претензии и мотивированный ответ.</li>
+            <li><strong>Исполнение требований:</strong> Не более 7 рабочих дней на уплату неустоек и возврат аванса.</li>
+            <li>Четкий алгоритм удержания штрафов/пеней из платежей и работа с независимыми гарантиями.</li>
+          </ul>
+        </div>
+        <div class="impact-box">
+          <strong>⚡ Бизнес-вывод:</strong> Резко сокращается время реакции на нарушения. Возрастает риск расторжения контрактов при наличии вины. Требуется внедрение внутреннего SLA по обработке претензий.
+        </div>
+        <a href="#" class="source-link">Проект постановления Правительства РФ</a>
+      </article>
+
+      <!-- 4 -->
+      <article class="card">
+        <div class="card-meta"><span>Нацрежим</span><span class="badge info">Разъяснение</span></div>
+        <h2 class="card-title">Исключения из нацрежима: СВО и мобилизация</h2>
+        <div class="card-content">
+          <ul>
+            <li>Запреты нацрежима <strong>не применяются</strong> при закупках для нужд СВО, мобилизационной подготовки и деятельности в зонах военного положения.</li>
+            <li>Основание: действующая редакция ПП РФ № 1875 и № 1745.</li>
+            <li>Учтены особенности ценообразования при закупках у ед. поставщика.</li>
+          </ul>
+        </div>
+        <div class="impact-box">
+          <strong>⚡ Бизнес-вывод:</strong> Заказчики могут инициировать закупки с отступлением от нацрежима для указанных целей. Необходимо проверять обоснование в ТЗ и извещении.
+        </div>
+        <a href="#" class="source-link">Письмо Минфина РФ от 20.03.2026 № 24-01-06/23139</a>
+      </article>
+
+      <!-- 5 -->
+      <article class="card">
+        <div class="card-meta"><span>Контроль</span><span class="badge info">Минпромторг</span></div>
+        <h2 class="card-title">Проверка реестровых записей</h2>
+        <div class="card-content">
+          <ul>
+            <li>Реестровая запись подтверждает <strong>только страну происхождения</strong>, а не технические характеристики.</li>
+            <li>Соответствие ТЗ проверяется <strong>на этапе приемки</strong>.</li>
+            <li>Запись должна быть <strong>действующей на всех этапах</strong> (от заявки до исполнения).</li>
+            <li>Подмена записи или несоответствие = отказ в приемке.</li>
+          </ul>
+        </div>
+        <div class="impact-box">
+          <strong>⚡ Бизнес-вывод:</strong> Нельзя менять реестровый номер на этапе поставки без согласования. Строго следить за сроками действия записей и соответствием фактических товаров заявленным параметрам.
+        </div>
+        <a href="#" class="source-link">Письмо Минпромторга от 09.04.2026 № 37479/12</a>
+      </article>
+
+      <!-- 6 -->
+      <article class="card">
+        <div class="card-meta"><span>Судебная практика</span><span class="badge practice">06.04.2026</span></div>
+        <h2 class="card-title">Требования к СПИК в заявках</h2>
+        <div class="card-content">
+          <ul>
+            <li>Ссылки на наличие СПИК и его реквизитов <strong>недостаточно</strong>.</li>
+            <li>Обязательно прикладывать <strong>Заключение Минпромторга</strong> о выполнении/невыполнении обязательств по СПИК (п. 1(1) ПП № 719).</li>
+            <li>Отсутствие документа признается ФАС и судами законным основанием для отклонения заявки.</li>
+          </ul>
+        </div>
+        <div class="impact-box">
+          <strong>⚡ Бизнес-вывод:</strong> Запросить у партнеров Заключение о выполнении СПИК заранее. Без него заявка будет отклонена, либо контракт расторгнут при приемке.
+        </div>
+        <a href="#" class="source-link">Решение АС Пермского края от 06.04.2026 № А50-23601/2025</a>
+      </article>
+    </div>
+
+    <footer>
+      <p>© 2026 Отдел аналитики закупок | Данные актуальны на 07.05.2026</p>
+      <p style="margin-top:8px; font-size:0.85rem;">Рекомендуется ознакомить ответственных сотрудников с изменениями до вступления их в силу.</p>
+    </footer>
+  </div>
+</body>
+</html>
